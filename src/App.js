@@ -1,7 +1,14 @@
+import { useState } from "react";
+import Body from "./components/Body";
+import Header from "./components/Header";
+
 function App() {
+  const [themeName, setThemeName] = useState("Dark");
+
   return (
-    <div className="App">
-      <h1 className="font-bold text-blue-400">Hello</h1>
+    <div>
+      <Header themeName = {themeName} setThemeName = {setThemeName} />
+      <Body themeName={themeName}/>
     </div>
   );
 }
