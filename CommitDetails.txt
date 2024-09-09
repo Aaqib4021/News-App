@@ -1,0 +1,2 @@
+commit 2-> initialized my app and setup of tailwind
+commit 3--> fetched data from api and then displayed that on to the screen
