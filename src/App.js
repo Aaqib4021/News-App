@@ -1,9 +1,14 @@
-import Body from "./Components/Body";
+import { useState } from "react";
+import Body from "./components/Body";
+import Header from "./components/Header";
 
 function App() {
+  const [themeName, setThemeName] = useState("Dark");
+
   return (
-    <div className="bg-zinc-900 w-full min-h-screen p-6">
-      <Body />
+    <div>
+      <Header themeName = {themeName} setThemeName = {setThemeName} />
+      <Body themeName={themeName}/>
     </div>
   );
 }
